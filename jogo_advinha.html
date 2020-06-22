@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 100);
+	console.log(numeroPensado);
+	var chute = parseInt(prompt("Digite seu chute!"));
+	
+	if(chute == numeroPensado) {
+
+		mostra("Acertô, mizeravee!");
+	} else {
+		mostra("Errou, otário! O número pensado é: " + numeroPensado);
+	}
+
+</script>

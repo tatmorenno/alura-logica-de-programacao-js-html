@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var chute = parseInt(prompt("Diga qual o seu chute: "));
+	var numeroPensado = Math.round(Math.random() * 10);
+	var contador = 1;
+
+	if(chute == numeroPensado) {
+
+		mostra("Parabéns, o número pensado foi exatamente esse!");
+	} else {
+
+		while(contador <= 10) {
+
+			mostra("Você errou!");
+			contador = contador + 1;
+		}
+	}
+
+
+
+</script>

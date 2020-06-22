@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+	}
+	
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaImc(peso, altura) {
+
+		var imc = peso / (altura * altura);
+
+		return imc;
+
+	}
+
+	var imcTati = calculaImc(58, 1.68);
+	var imcTatiAlta = calculaImc(60,1.70);
+	var imcTatiIdeal = calculaImc(65,1.68);
+	var imcTatiMaximo =calculaImc(70,1.68);
+
+	mostra(imcTati);
+	mostra(imcTatiAlta);
+	mostra(imcTatiIdeal);
+	mostra(imcTatiMaximo);
+
+
+
+</script>
